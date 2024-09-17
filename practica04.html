@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 04</title>
+    <style>
+        img{
+            border-radius: 50px;
+        }
+    </style>
+    <script>
+        //esto es un comentario
+        let variable = "comentario"
+        let numero = 50
+        console.log(variable)
+        console.log(numero)
+
+    </script>
+</head>
+<body>
+    <h1>Random picture</h1>
+    <ul>
+        <li><a href="#john" id = "m1">John</a></li>
+        <li><a href="#jane" id = "m2">Jane</a></li>
+    </ul>
+    <figure>
+        <img src="https://picsum.photos/id/1/200/200" alt="">
+        <figcaption id = "1">1</figcaption>
+        <img src="https://picsum.photos/id/2/200/200" alt="">
+        <figcaption id = "2">2</figcaption>
+    </figure>
+
+    <script>
+        const elmento1 = document.getElementById("1").textContent
+        const elmento2 = document.getElementById("2").textContent
+        console.log(elmento1)
+        console.log(elmento2)
+        <!-- innerHTML intercambiar -->
+        document.getElementById("m1").innerHTML = elmento1
+        document.getElementById("m2").innerHTML = elmento2
+
+    </script>
+</body>
+</html>
