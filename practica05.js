@@ -5,7 +5,7 @@ const picture = parametro => {
 const src = url+parametro+size
     return `
         <figure>
-            <img src="https://picsum.photos/id/${parametro}/200/200" alt="" id = "${parametro}">
+            <img src="https://picsum.photos/id/${parametro}/200/200" alt="" id = "${parametro}" class ="">
             <figcaption>${parametro}</figcaption>
         </figure>
         `
@@ -13,15 +13,23 @@ const src = url+parametro+size
 //console.log(picture())
 app.innerHTML = picture(1) + picture(2) + picture(3) 
 
-const elemento1 = document.getElementById("1")
-const elemento2 = document.getElementById("2")
-const elemento3 = document.getElementById("3")
-elemento1.addEventListener("click", miFuncion)
-elemento2.addEventListener("click", miFuncion)
-elemento3.addEventListener("click", miFuncion)
+//const elemento1 = document.getElementById("1")
+//const elemento2 = document.getElementById("2")
+//const elemento3 = document.getElementById("3")
+//elemento1.addEventListener("click", miFuncion)
+//elemento2.addEventListener("click", miFuncion)
+//elemento3.addEventListener("click", miFuncion)
 
-function miFuncion(parametro){
+const lista = document.querySelectorAll("img")
+for (let i = 0; i < lista.length; i++) {
+    lista[i].addEventListener("click", miFuncion) 
+}
+
+function miFuncion(evento){
     console.log("ayyy:")
-    console.log(parametro)
+    console.log(evento.target)
+    var imagen = evento.target
+    imagen.classList.toggle("redonda")
+
 }
 
