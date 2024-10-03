@@ -1,0 +1,46 @@
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 15px 15px 15px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+fieldset{
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc
+    
+
+}
+
+legend{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    font-family: 'Arial', sans-serif;
+}
+
+input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#xx{
+    color: white;               
+    background-color: blue;      
+    border: none;                 
+    padding: 10px 20px;           
+    font-size: 16px;              
+    cursor: pointer;              
+    border-radius: 5px;           
+    width: 100%;
+}
